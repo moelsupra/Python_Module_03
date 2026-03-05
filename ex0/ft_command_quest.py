@@ -1,5 +1,6 @@
 import sys
 
+
 def main() -> None:
     print("=== Command Quest ===")
     if len(sys.argv) == 1:
@@ -13,6 +14,5 @@ def main() -> None:
     print(f"Total arguments: {len(sys.argv)}")
 
 
-
-    
-main()
+if __name__ == "__main__":
+    main()

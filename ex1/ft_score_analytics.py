@@ -1,5 +1,6 @@
 import sys
 
+
 def main() -> None:
     print("=== Player Score Analytics ===")
     if len(sys.argv) > 1:
@@ -15,7 +16,10 @@ def main() -> None:
         except ValueError:
             print("That's not a number!")
     else:
-        print("No scores provided. Usage: python3 ft_score_analytics.py <score1> <score2> ...")
+        print("No scores provided. Usage: "
+              "python3 ft_score_analytics.py <score1> <score2> ..."
+              )
 
 
-main()
+if __name__ == "__main__":
+    main()
