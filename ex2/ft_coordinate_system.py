@@ -45,7 +45,7 @@ def show_unpacking(coords_str: str) -> None:
 if __name__ == "__main__":
     print("=== Game Coordinate System ===")
     print()
-    show_coords("10, 20, 5", True)
+    show_coords("10,20,5", True)
     print()
     show_coords("3,4,0")
     print()
