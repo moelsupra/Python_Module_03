@@ -30,12 +30,12 @@ def main() -> None:
     print(f"Alice unique: {alice.difference(bob)}")
     print(f"Bob unique: {bob.difference(alice)}")
 
-    print("\nwho's missing what achievements\n")
+    print("\nWho's missing what achievements\n")
     print(f"\nAlice missing: {unique_achievements.difference(alice)}")
     print(f"Bob missing: {unique_achievements.difference(bob)}")
     print(f"Charlie missing: {unique_achievements.difference(charlie)}")
 
-    print("\nshared accomplishments\n")
+    print("\nShared accomplishments\n")
     print(f"Alice & Bob share: {alice.intersection(bob)}")
     print(f"Alice & Charlie share: {alice.intersection(charlie)}")
     print(f"Bob & Charlie share: {bob.intersection(charlie)}")
