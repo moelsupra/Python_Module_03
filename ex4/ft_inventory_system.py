@@ -118,10 +118,12 @@ def display_properties(inventory: dict) -> None:
         val_str += f"{val['quantity']}, "
     print(f"Dictionary keys: {key_str[:-2]}")
     print(f"Dictionary values: {val_str[:-2]}")
-    key_name = "sword"
+    key_name = None
+    for key in inventory.keys():
+        key_name = key
+        break
     result = inventory.get(key_name) is not None
-    if result:
-        print(f"Sample lookup - '{key_name}' in inventory: {result}")
+    print(f"Sample lookup - '{key_name}' in inventory: {result}")
 
 
 def main() -> None:
