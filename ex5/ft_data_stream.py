@@ -119,19 +119,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-    # *Test*
-    # events = []
-    # i = 0
-    # while i < 10000000:
-    #     events.append({'player': 'alice', 'level': 1, 'action': 'kill'})
-    #     i += 1
-    # print('list done')
-    # def gen(n):
-    #     i = 0
-    #     while i < n:
-    #         yield {'player': 'alice', 'level': 1, 'action': 'kill'}
-    #         i += 1
-    # for e in gen(10000000):
-    #     pass
-    # print('generator done')

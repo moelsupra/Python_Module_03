@@ -6,6 +6,9 @@ def parse_inventory(args: list) -> dict:
     for arg in args:
         try:
             name, quantity = arg.split(":")
+            if not name:
+                print(f"Invalid format '{arg}' — name cannot be empty")
+                continue
             qty: int = int(quantity)
             if qty <= 0:
                 print(f"Error: '{name}' quantity must be positive, got {qty}")
