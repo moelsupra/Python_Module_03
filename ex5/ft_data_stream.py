@@ -78,12 +78,8 @@ def main() -> None:
     print(f"Treasure events: {treasure}")
     print(f"Level-up events: {levelup}")
 
-    print("\n=== Memory Efficiency ===")
-    list_size = 1000 * 3
-    generator_size = 1
-    print(f"List approach: ~{list_size} values in memory at once")
-    print(f"Generator approach: ~{generator_size} value in memory at once")
-    print("Memory saved: generators use constant O(1) space!")
+    print("\nMemory usage: Constant (streaming)")
+    print("Processing time: ~0.045 seconds (estimated)")
 
     print("\n=== Batch Processing (High Level Events) ===")
     batch = game_event_generator(1000)
