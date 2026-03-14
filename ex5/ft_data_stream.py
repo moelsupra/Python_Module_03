@@ -118,9 +118,9 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    # main()
-    
-    ###### Test ######
+    main()
+
+    # *Test*
     # events = []
     # i = 0
     # while i < 10000000:
